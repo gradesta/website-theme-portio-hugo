@@ -53,7 +53,7 @@
           <div class="figure-svg">
             <img src="images/hero/figure-svg.svg" alt="figure-svg" />
           </div>
-          <img src="{{ .image | absURL }}" alt="hero-image"/>
+          <video autoplay loop muted src="{{ .video | absURL }}" alt="hero-image"/>
 
           {{ if .videoURL }}
           <div class="hero_figure-popup">
