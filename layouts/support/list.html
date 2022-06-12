@@ -51,7 +51,9 @@
     </div>
 
     <div class="container">
+        <div style="padding-top: 90px">
         {{ .pricingTitle | markdownify }}
+        </div>
         <div class="col-12">
             <div class="service__slider">
                 {{ $Section := .priceLevel }}
@@ -76,8 +78,10 @@
                     <a href="{{.callToActionLink}}" class="btn btn-primary">{{.callToAction}}</a>
                 </div>
                 {{ end }}
-                {{ .pricingNotes | markdownify }}
             </div>
+            <p style="text-align: right; padding-top: 10px">
+                {{ .pricingNotes | markdownify }}
+            </p>
         </div>
     </div>
 
