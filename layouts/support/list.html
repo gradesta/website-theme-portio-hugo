@@ -40,14 +40,16 @@
 <section class="section support">
     <div class="container">
         {{ .productsTitle | markdownify }}
-
         {{ $Section := .product }}
         {{ range $Section }}
+        <div style="padding-bottom: 20px" class="service__slider_item">
         <p>
             {{ .content | markdownify }}
         </p>
+        </div>
         {{ end }}
     </div>
+
     <div class="container">
         {{ .pricingTitle | markdownify }}
         <div class="col-12">
